@@ -105,8 +105,8 @@ def hourly_trend_changes(data_list):
                 
                 #setto il contatore del trend_change a zero
                 trend_change_count=0
-                print(same_hour_list)
-                print('----')
+                #print(same_hour_list)#(controlli personali)
+                #print('----')#(controlli personali)
                 #ciclo su tutte la lista delle temperature orarie
                 for j, line in enumerate(same_hour_list):
                     #se sono al primo elemento
@@ -178,13 +178,13 @@ def hourly_trend_changes(data_list):
     #ritorno la lista risultato
     return result_list
 #test
-time_series_file = CSVTimeSeriesFile(name='data.csv')
+#time_series_file = CSVTimeSeriesFile(name='data.csv')
 
-time_series = time_series_file.get_data()
+#time_series = time_series_file.get_data()
 
-lista=hourly_trend_changes(time_series)
+#lista=hourly_trend_changes(time_series)
 
-print(lista)
+#print(lista)
 
-print(len(lista))
+#print(len(lista))
 
