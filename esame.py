@@ -193,8 +193,8 @@ def hourly_trend_changes(data_list):
     return result_list
 
 #TEST
-#time_series_file = CSVTimeSeriesFile(name='data.csv')
-#time_series = time_series_file.get_data()
-#lista=hourly_trend_changes(time_series)
-#print(lista)
-#print(len(lista))
+time_series_file = CSVTimeSeriesFile(name='data.csv')
+time_series = time_series_file.get_data()
+lista=hourly_trend_changes(time_series)
+print(lista)
+print(len(lista))
